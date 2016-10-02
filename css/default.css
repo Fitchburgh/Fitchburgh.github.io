@@ -1,0 +1,57 @@
+body {
+  background-image: url('http://i.imgur.com/K05VKe7.jpg');
+  background-size: cover;
+  font-family: 'Voltaire'
+}
+
+#credits {
+  font-size: 10px;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:20px;
+  color: white;
+}
+
+.index-header {
+  background: rgba(185, 39, 44, .85);
+}
+
+.blod-panel-div {
+  min-width: 60%;
+}
+
+.blog-panel-div {
+  background: rgba(32, 164, 111, .85);
+}
+
+.latest-post {
+  background: rgba(113, 253, 217, .85);
+  height: 300px;
+}
+
+.post-meta {
+  font-size: 20px;
+}
+.head-text {
+  left: 50px;
+  font-size: 50px;
+  color: #255049;
+}
+.blog-list {
+  color: black;
+}
+
+.post-link {
+  color: rgba(185, 39, 44, 1);
+}
+
+.blog-panel {
+  max-width: 60%;
+}
+
+.blog-panel-heading {
+  text-decoration: underline;
+  font-size: 35px;
+}

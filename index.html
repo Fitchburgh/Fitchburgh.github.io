@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div class="top-row">
+  <div class="col-md-1 index-buttons">
+    <div class="btn-group-vertical" role="group" aria-label="main-buttons">
+      <button type="button" onclick="location.href='about_me.html'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">About Me</button>
+      <button type="button" onclick="location.href='projects.html'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">Projects</button>
+      <button type="button" onclick="location.href='https://twitter.com/b_fitchburgh'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">Twitter</button>
+      <button type="button" onclick="location.href='https://www.linkedin.com/in/brandon-fitch-721bb443'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">LinkedIn</button>
+      <!-- <button type="button" role="group" class="btn btn-info"></button> -->
+    </div>
+  </div>
+  </div>
+    <div class="page-header index-header">
+      <br>
+      <h1 class="head-text"><strong>BRANDON FITCH</strong><small><u>programming student</u></small></h1>
+    </div>
+  </div>
+
+<br><br><br><br>
+
+<br><br><br><br>
+
+<div class="blog-blog-preview">
+  <div class="col-md-7 preview">
+
+  </div>
+  <div class="col-md-2"></div>
+  <div class="col-md-3 blog-panel">
+    <div class="panel panel-default blog-panel-div">
+      <div class="contain-header-blog">
+        <div class="panel-heading blog-panel-heading">Past Posts:</div>
+      </div>
+      <div class="panel-body blog-panel-body">
+        <ul class="post-list blog-list">
+          {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h4>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+              </h4>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
