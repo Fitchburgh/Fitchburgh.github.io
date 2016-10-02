@@ -21,8 +21,11 @@ body {
 
 .twitter {
   background: rgba(185, 39, 44, .85);
-  font-style: oblique;
   font-size: 20px;
+}
+
+.twitter-stuff {
+  max-width: 45%;
 }
 
 .twitter-share-button, .twitter-follow-button {
@@ -30,7 +33,7 @@ body {
 }
 
 .status-panel {
-  background: rgba(250, 138, 45, .85);
+  background: rgba(253, 200, 40, .85);
 }
 
 .index-header {
