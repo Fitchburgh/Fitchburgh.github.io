@@ -27,10 +27,15 @@ when I am clearly passionate about programming.
 At week 3 of TIY, I doubt I've made a better decision in my life by doing this.
 
 'This' being:
+
   -stop working
+
   -pay a lot of money
+
   -take no income
+
   -do something new and extremely difficult
+  
 
 So when I say I thought I understood 'time is money', I did, but not as clearly
 as I do now.
