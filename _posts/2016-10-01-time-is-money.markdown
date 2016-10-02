@@ -37,4 +37,6 @@ as I do now.
 
 The rest of my life is just now beginning.  I'm learning Ruby, Rails, HTML, CSS,
 JavaScript and how to learn more and fend for myself.  Our instructor Bryce has already
-given us an invaluable experience, and I have never spent money more wisely.
+given us an invaluable experience, and I am certain, I've never spent money more wisely.
+
+-Fitchburgh

@@ -19,6 +19,16 @@ body {
   color: white;
 }
 
+.twitter {
+  background: rgba(185, 39, 44, .85);
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.twitter-share-button, .twitter-follow-button {
+  color: black;
+}
+
 .status-panel {
   background: rgba(250, 138, 45, .85);
 }
