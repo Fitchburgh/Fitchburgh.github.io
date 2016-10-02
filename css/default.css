@@ -3,15 +3,24 @@ body {
   background-size: cover;
   font-family: 'Voltaire'
 }
-
-#credits {
-  font-size: 10px;
-  text-align: center;
+/*.credits {
   position:absolute;
   bottom:0;
   width:100%;
-  height:20px;
+  height:60px;
+}*/
+#credits {
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:0px;
   color: white;
+}
+
+.status-panel {
+  background: rgba(250, 138, 45, .85);
 }
 
 .index-header {
