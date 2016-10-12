@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Heroku"
+title:  "Heroku: Part 1"
 date:   2016-10-11
 categories: standard
 ---
