@@ -16,7 +16,6 @@ This post will cover file structure and creating your project folder.  As with a
 
 This will be with 2 source tables and 1 joined table via SQL. Reminder Heroku has a 10,000 line limit in your tables (cumulative).
 
-My file structure (and this post in the README) can be found at github here:
 
 It's basically a checklist of files and folders you'll need before you even think about deploying.
 
