@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Heroku"
-date:   2016-11-01
+date:   2016-10-11
 categories: standard
 ---
 Heroku. Sinatra. Rails. PG. Postico. ActiveRecord. Elixir. Go. HTML. CSS. SCSS. JQuery. JQueryUI. The list goes on.
