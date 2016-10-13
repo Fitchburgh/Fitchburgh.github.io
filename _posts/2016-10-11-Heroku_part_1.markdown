@@ -129,6 +129,9 @@ $ touch Gemfile
 $ touch Procfile
 
 
+$ touch Rakefile
+
+
 Notice no extensions here.
 
 
