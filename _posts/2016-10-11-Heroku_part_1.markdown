@@ -64,6 +64,7 @@ Next we'll need our models.
 
 $mkdir models
 
+cd models
 
 $ touch armor.rb
 
