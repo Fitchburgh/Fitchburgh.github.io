@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Time is Money"
 date:   2016-10-01 15:29:40 -0400
 categories: standard
@@ -35,7 +35,7 @@ At week 3 of TIY, I doubt I've made a better decision in my life by doing this.
   -take no income
 
   -do something new and extremely difficult
-  
+
 
 So when I say I thought I understood 'time is money', I did, but not as clearly
 as I do now.

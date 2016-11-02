@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Frustration"
 date:   2016-10-03
 categories: standard
@@ -13,6 +13,6 @@ I have made some, at least I would consider, friends in the small cohort at TIY,
 
 Frustration dissipates quickly for me, and I get into tinker mode, stubborn mode, whatever you want to call it, I want to finish.  I want to keep trying.  Talking about a failure makes it less likely to bother me. Just makes me want to conquer it.  
 
-Anyway, it's a beautiful week in Raleigh/Durham and I get to ride the motorcycle to school everyday, where I get to practice my coding skills, and learn more about computer science as a whole.  Nothing to be frustrated about. 
+Anyway, it's a beautiful week in Raleigh/Durham and I get to ride the motorcycle to school everyday, where I get to practice my coding skills, and learn more about computer science as a whole.  Nothing to be frustrated about.
 
 -Fitchburgh
