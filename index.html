@@ -1,88 +1,95 @@
 ---
 layout: default
 ---
-<div class="top-spacer">
-  <div class="col-md-12">
-  </div>
-</div>
-
-<div class="top-row">
-  <div class="col-md-1 index-buttons">
-    <div class="btn-group-vertical" role="group" aria-label="main-buttons">
-      <button type="button" onclick="location.href='about_me.html'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">About Me</button>
-      <button type="button" onclick="location.href='https://github.com/Fitchburgh/'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">Projects</button>
-      <button type="button" onclick="location.href='https://twitter.com/b_fitchburgh'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">Twitter</button>
-      <button type="button" onclick="location.href='https://www.linkedin.com/in/brandon-fitch-721bb443'" role="group" aria-label="main-buttons" class="btn-group-vertical btn btn-info">LinkedIn</button>
-      <!-- <button type="button" role="group" class="btn btn-info" disabled>Coming Soon!</button> -->
-    </div>
-  </div>
-  </div class="col-md-11">
-    <div class="page-header index-header">
-      <br>
-      <h1 class="head-text"><strong>.BRANDON FITCH.</strong><small><u>programming student</u></small></h1>
-    </div>
-  </div>
-</div>
-
-
-<br><br><br><br>
-
-<div class="blog-blog-preview">
-  <div class="col-md-6 preview">
-    <div class="panel panel-default status-panel">
-      <div class="panel-body">
-        <h3><u>What I've been up to:</u></h3>
-        <p class="list-group-item list-group-item-action list-group-item-warning"><strong>Reading:</strong> Eloquent JS, Jon Duckett's JS and JQuery</p>
-        <p class="list-group-item list-group-item-action list-group-item-warning"><strong>Practice:</strong> Ruby Koans and 57 Exercises</p>
-        <p class="list-group-item list-group-item-action list-group-item-warning"><strong>MeTime:</strong> Still playing hockey Wednesday nights</p>
-        <p class="list-group-item list-group-item-action list-group-item-warning"><strong>Other:</strong> It's football season. My fantasy team sucks.</p>
-        <!-- <p class="list-group-item list-group-item-action list-group-item-warning"></p> -->
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3"></div>
-  <div class="col-md-3 blog-panel">
-    <div class="panel panel-default blog-panel-div">
-      <div class="contain-header-blog">
-        <div class="panel-heading blog-panel-heading">Past Posts:</div>
-      </div>
-      <div class="panel-body blog-panel-body">
-        <ul class="post-list blog-list">
-          {% for post in site.posts %}
-            <li>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h4>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-              </h4>
-            </li>
-          {% endfor %}
-        </ul>
+<div class="container">
+  <div class="top-row">
+    </div class="col-md-10 pull-right">
+      <div class="page-header index-header">
+        <br>
+        <h1 class="head-text"><strong>.BRANDON FITCH.</strong><small><u>programming student</u></small></h1>
       </div>
     </div>
   </div>
 </div>
-<div class="spacer-row">
-  <div class="col-md-12 spacer"></div>
-</div>
-<div class="twitter-row">
-  <div class="col-md-3 twitter-stuff">
-    <div class="panel panel-default twitter">
-      <div class="panel-body">
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@b_fitchburgh"><u>Send me a tweet!</u></a>
+<div class="container">
+  <div class="row row-1">
+    <div class="container">
+      <div class="col-sm-6 dark-theme">
+        <br />
       </div>
-      <div class="panel-footer twitter">
-        <a class="twitter-follow-button" href="https://twitter.com/b_fitchburgh" data-size="default"><u>Follow me: @b_fitchburgh</u></a>
+      <div class="col-sm-6 light-theme">
+        <br />
+        <div class="panel panel-default blog-links">
+          <div class="panel-body">
+            <h3><u>Latest Post:</u></h3>
+              <a class="blogPostLink" href="/index/blog"><u>Sinatra App and Deploying to Heroku</u></a>
+          </div>
+
+        </div>
+        <div class="panel panel-default status-panel slideFeat">
+          <div class="panel-body">
+            <h3 id="upTo"><u>What I've been up to:</u></h3>
+            <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Reading:</strong> Michael Hartl - Rails 5, pretty much any Rails I can</p>
+            <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Practice:</strong> Ruby Koans and 57 Exercises</p>
+            <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>MeTime:</strong> Still playing hockey Wednesday nights. Record 2-0</p>
+            <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Other:</strong> Thankfully the NHL season has started. Go Pens! Record: 2-0-0</p>
+            <!-- <p class="list-group-item list-group-item-action list-group-item-warning"></p> -->
+          </div>
+        </div>
+        <div class="row twitter-row">
+          <div class="col-md-6 twitter-stuff">
+            <div class="panel panel-default twitter">
+              <div class="panel-body slideFeat">
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@b_fitchburgh"><u>Send me a tweet!</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 twitter-stuff">
+            <div class="panel panel-default twitter">
+              <div class="panel-body slideFeat">
+                <a class="twitter-follow-button" href="https://twitter.com/b_fitchburgh" data-size="default"><u>Follow me: @b_fitchburgh</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="button" class="btn btn-info col-sm-12" id="contact-btn">Send me a direct message</button>
+            <div class="contact-form">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Name*</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Message*</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  <small id="emailHelp" class="form-text textMuted">* denotes required fields.</small>
+                </div>
+                <button type="button" class="btn btn-info col-sm-12" id="sendFeedbackBtn">Send</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="panel panel-default pastBlogLinks">
+          <div class="panel-body blog-panel-body">
+            <ul class="post-list blog-list">
+              {% for post in site.posts %}
+                <li>
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  <h4>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+                  </h4>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-6">
-  </div>
-</div>
-
-
-<!-- <div class="col-md-12">
-  <div class="credits">
-    <h4 id='credits'> Site by Brandon Fitch <br />2016 v 1.0</h4>
-  </div>
-</div> -->
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

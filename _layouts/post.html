@@ -1,35 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Voltaire|Monoton|Architects+Daughter" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="/css/blogpost.css">
-    <link rel="shortcut icon" href="http://www.iconj.com/ico/2/7/278lfrq412.ico" type="image/x-icon" />
-    <meta charset="utf-8">
-    <title>Fitchburgh - Blog</title>
-  </head>
-  <body>
-
-
-    <div class="row">
-      <div class="col-md-2">
-        <button type="button" class="btn btn-info" onclick="location.href='/index.html'">Home</button>
+<div class="container">
+  <div class="post-row">
+    <div class="">
+    <div class="panel panel-default blog-post-panel">
+      <div class="panel-body about-me-panel-body">
+        <p>
+          {{ content }}
+        </p>
       </div>
-      <div class="top row">
-        <div class="col-lg-10">
-        </div>
-      </div>
-
+      <!-- <img class="pitt" src="/pitt-black-and-white.jpg" alt="pitt"/> -->
     </div>
-    <div class="post-row">
-      <div class="col-md-8"></div>
-        <div class="panel panel-default blog-post-panel">
-          <div class="panel-body blog-post-panel-body">
-            {{ content }}
-          </div>
-        </div>
-      <div class="col-md-2"></div>
-    </div>
-
-  </body>
-</html>
+  </div>
+</div>
