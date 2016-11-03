@@ -14,7 +14,7 @@ body {
 .light-theme {
   /*background-color: rgba(255, 188, 0, 1);*/
   background-color: rgba(208, 208, 208, 1);
-  height: 130vh;
+  height: 116vh;
   background-size: cover;
 }
 
@@ -30,7 +30,7 @@ body {
   /*background-color: rgba(40, 44, 52, 1);*/
   background-image: url('images/cincy.jpeg');
   background-size: cover;
-  height: 100vh;
+  height: 116vh;
 }
 
 #timeNow {
