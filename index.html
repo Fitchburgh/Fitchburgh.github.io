@@ -21,74 +21,58 @@ layout: default
         <div class="col-sm-6 light-theme">
           <div class="light-theme-content">
           <br />
-          <div class="panel panel-default blog-links">
+          <div class="panel panel-default blog-links slideFeat">
             <div class="panel-body">
               <h3><u>Latest Post:</u></h3>
-                <a class="blogPostLink" href="standard/2016/11/01/The_State_of_Things.html"><u>The State of Things - Wk 8</u></a>
-            </div>
-
-          </div>
-          <div class="panel panel-default status-panel slideFeat">
-            <div class="panel-body">
-              <h3 id="upTo"><u>What I've been up to:</u></h3>
-              <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Reading:</strong> Michael Hartl - Rails 5, pretty much any Rails I can</p>
-              <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Practice:</strong> Ruby Koans and 57 Exercises</p>
-              <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>MeTime:</strong> Still playing hockey Wednesday nights. Record 5-0</p>
-              <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Other:</strong> Thankfully the NHL season has started. Go Pens! Record: 6-2-1</p>
-              <!-- <p class="list-group-item list-group-item-action list-group-item-warning"></p> -->
-            </div>
-          </div>
-          <div class="row twitter-row">
-            <div class="col-md-6 twitter-stuff">
-              <div class="panel panel-default twitter">
-                <div class="panel-body slideFeat">
-                  <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@b_fitchburgh"><u>Send me a tweet!</u></a>
+              <div class="panel panel-default slideFeat pastBlogLinks">
+                <div class="panel-body blog-panel-body">
+                  <ul class="post-list blog-list">
+                    {% for post in site.posts limit:5 %}
+                      <li>
+                        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        <h4>
+                          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+                        </h4>
+                      </li>
+                    {% endfor %}
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 twitter-stuff">
+
+          </div>
+          <div class="row twitter-row">
+            <div class="col-sm-12 twitter-stuff">
               <div class="panel panel-default twitter">
-                <div class="panel-body slideFeat">
+                <div class="panel-body">
                   <a class="twitter-follow-button" href="https://twitter.com/b_fitchburgh" data-size="default"><u>Follow me: @b_fitchburgh</u></a>
                 </div>
               </div>
             </div>
-            <div class="col-md-12">
-              <button type="button" class="btn btn-info col-sm-12" id="contact-btn">Send me a direct message</button>
-              <div class="contact-form">
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Name*</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleTextarea">Message*</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                    <small id="emailHelp" class="form-text textMuted">* denotes required fields.</small>
-                  </div>
-                  <button type="button" class="btn btn-info col-sm-12" id="sendFeedbackBtn">Send</button>
-                </form>
-              </div>
-            </div>
           </div>
           <br />
-          <div class="panel panel-default pastBlogLinks">
-            <div class="panel-body blog-panel-body">
-              <ul class="post-list blog-list">
-                {% for post in site.posts limit:4 %}
-                  <li>
-                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <h4>
-                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-                    </h4>
-                  </li>
-                {% endfor %}
-              </ul>
+
+          <div class="col-md-12">
+            <button type="button" class="btn btn-info col-sm-12" id="contact-btn">Send me a direct message</button>
+            <div class="contact-form">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Name*</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Message*</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  <small id="emailHelp" class="form-text textMuted">* denotes required fields.</small>
+                </div>
+                <button type="button" class="btn btn-info col-sm-12" id="sendFeedbackBtn">Send</button>
+                <button type="button" class="btn btn-info col-sm-12" id="hide-contact-btn">Hide Window</button>
+              </form>
             </div>
           </div>
         </div>

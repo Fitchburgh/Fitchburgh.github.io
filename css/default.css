@@ -50,6 +50,10 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.twitter {
+  text-align: center;
+}
+
 .blog-links {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;

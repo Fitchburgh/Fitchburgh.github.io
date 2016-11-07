@@ -1,5 +1,5 @@
 body {
-  /*background-color: rgba(7, 51, 67, 1);*/
+  background-color: rgba(7, 51, 67, 1);
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -10,6 +10,12 @@ body {
 /*.index-buttons {
   top: 167.5px;
 }*/
+
+
+.overlap {
+  background-color: rgba(208, 208, 208, 1);
+  height: 100px;
+}
 
 .light-theme {
   /*background-color: rgba(255, 188, 0, 1);*/
@@ -27,7 +33,7 @@ body {
 }
 
 .dark-theme {
-  /*background-color: rgba(40, 44, 52, 1);*/
+  background-color: black;
   background-image: url('images/cincy.jpeg');
   background-size: cover;
   height: 120vh;
@@ -48,6 +54,10 @@ body {
 
 .twitter, .pastBlogLinks {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.twitter {
+  text-align: center;
 }
 
 .blog-links {

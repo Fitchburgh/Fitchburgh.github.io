@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Voltaire|Monoton|Architects+Daughter" rel="stylesheet">
     <link rel="shortcut icon" href="http://www.iconj.com/ico/2/7/278lfrq412.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/blogpost.css">
+    <link rel="stylesheet" href="/css/blogpost.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <title>Fitchburgh</title>
@@ -15,7 +15,7 @@
     <div class="col-md-12 index-buttons">
       <div class="btn-group pull-left" role="group" aria-label="main-buttons">
         <button type="button" class="btn btn-info" onclick="location.href='/'">Home</button>
-        <button type="button" onclick="location.href='about_me.html'" role="group" aria-label="main-buttons" class="btn-group btn btn-info">About Me</button>
+        <button type="button" onclick="location.href='/about_me.html'" role="group" aria-label="main-buttons" class="btn-group btn btn-info">About Me</button>
         <button type="button" onclick="location.href='https://github.com/Fitchburgh/'" role="group" aria-label="main-buttons" class="btn-group btn btn-info">Projects</button>
         <button type="button" onclick="location.href='https://twitter.com/b_fitchburgh'" role="group" aria-label="main-buttons" class="btn-group btn btn-info">Twitter</button>
         <button type="button" onclick="location.href='https://www.linkedin.com/in/brandon-fitch-721bb443'" role="group" aria-label="main-buttons" class="btn-group btn btn-info">LinkedIn</button>
@@ -37,73 +37,58 @@
         <div class="container">
           <div class="col-sm-6 dark-theme">
             <br />
-            <div class="panel panel-default blog-links">
+            <div class="panel panel-default blog-links slideFeat">
               <div class="panel-body">
                 <h3><u>Latest Post:</u></h3>
-                  <a class="blogPostLink" href="/index/blog"><u>Sinatra App and Deploying to Heroku</u></a>
-              </div>
-            </div>
-            <div class="panel panel-default status-panel slideFeat">
-              <div class="panel-body">
-                <h3 id="upTo"><u>What I've been up to:</u></h3>
-                <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Reading:</strong> Michael Hartl - Rails 5, pretty much any Rails I can</p>
-                <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Practice:</strong> Ruby Koans and 57 Exercises</p>
-                <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>MeTime:</strong> Still playing hockey Wednesday nights. Record 5-0</p>
-                <p class="list-group-item list-group-item-action list-group-item-warning status-item"><strong>Other:</strong> Thankfully the NHL season has started. Go Pens! Record: 6-2-1</p>
-                <!-- <p class="list-group-item list-group-item-action list-group-item-warning"></p> -->
-              </div>
-            </div>
-            <div class="row twitter-row">
-              <div class="col-md-6 twitter-stuff">
-                <div class="panel panel-default twitter">
-                  <div class="panel-body slideFeat">
-                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@b_fitchburgh"><u>Send me a tweet!</u></a>
+                <div class="panel panel-default slideFeat pastBlogLinks">
+                  <div class="panel-body blog-panel-body">
+                    <ul class="post-list blog-list">
+                      {% for post in site.posts limit:5 %}
+                        <li>
+                          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                          <h4>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+                          </h4>
+                        </li>
+                      {% endfor %}
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 twitter-stuff">
+
+            </div>
+            <div class="row twitter-row">
+              <div class="col-sm-12 twitter-stuff">
                 <div class="panel panel-default twitter">
-                  <div class="panel-body slideFeat">
+                  <div class="panel-body">
                     <a class="twitter-follow-button" href="https://twitter.com/b_fitchburgh" data-size="default"><u>Follow me: @b_fitchburgh</u></a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-12">
-                <button type="button" class="btn btn-info col-sm-12" id="contact-btn">Send me a direct message</button>
-                <div class="contact-form">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Name*</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleTextarea">Message*</label>
-                      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                      <small id="emailHelp" class="form-text textMuted">* denotes required fields.</small>
-                    </div>
-                    <button type="button" class="btn btn-info col-sm-12" id="sendFeedbackBtn">Send</button>
-                  </form>
-                </div>
-              </div>
             </div>
             <br />
-            <div class="panel panel-default pastBlogLinks">
-              <div class="panel-body blog-panel-body">
-                <ul class="post-list blog-list">
-                  {% for post in site.posts %}
-                    <li>
-                      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                      <h4>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-                      </h4>
-                    </li>
-                  {% endfor %}
-                </ul>
+
+            <div class="col-md-12">
+              <button type="button" class="btn btn-info col-sm-12" id="contact-btn">Send me a direct message</button>
+              <div class="contact-form">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Name*</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Message*</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    <small id="emailHelp" class="form-text textMuted">* denotes required fields.</small>
+                  </div>
+                  <button type="button" class="btn btn-info col-sm-12" id="sendFeedbackBtn">Send</button>
+                  <button type="button" class="btn btn-info col-sm-12" id="hide-contact-btn">Hide Window</button>
+                </form>
               </div>
             </div>
           </div>
@@ -115,11 +100,13 @@
             </p>
             </div>
           </div>
+          <div class="overlap"></div>
         </div>
       </div>
     </div>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
+    <script type="text/javascript" src="/background.js"></script>
 
   </body>
 </html>
