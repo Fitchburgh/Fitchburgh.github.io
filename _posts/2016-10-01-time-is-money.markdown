@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Time is Money"
 date:   2016-10-01 15:29:40 -0400
 categories: standard

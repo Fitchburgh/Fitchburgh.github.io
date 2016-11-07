@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Frustration"
 date:   2016-10-03
 categories: standard

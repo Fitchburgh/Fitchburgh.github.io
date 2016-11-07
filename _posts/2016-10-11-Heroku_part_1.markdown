@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Heroku: Part 1"
 date:   2016-10-11
 categories: standard

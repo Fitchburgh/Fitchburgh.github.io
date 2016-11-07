@@ -1,0 +1,71 @@
+body {
+  background-color: rgba(7, 51, 67, 1);
+  font-family: 'Philosopher', sans-serif;
+}
+
+.index-header, #upTo, .pastBlogLinks{
+  color: white;
+}
+
+/*.index-buttons {
+  top: 167.5px;
+}*/
+
+.light-theme {
+  /*background-color: rgba(255, 188, 0, 1);*/
+  background-color: rgba(208, 208, 208, 1);
+  height: 120vh;
+  background-size: cover;
+}
+
+.blogPostLink, .twitter {
+  font-size: 19px;
+}
+
+#contact-btn {
+  font-size: 18px;
+}
+
+.dark-theme {
+  /*background-color: rgba(40, 44, 52, 1);*/
+  background-image: url('images/cincy.jpeg');
+  background-size: cover;
+  height: 120vh;
+}
+
+#timeNow {
+  color: white;
+  text-align: center;
+}
+
+.pitt {
+  max-width: 100%
+}
+
+.status-panel {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.twitter, .pastBlogLinks {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.blog-links {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.status-item {
+  background-color: rgba(255, 188, 0, 0.5);
+  color: black;
+  font-size: 15px;
+}
+
+#explore-img, #moto-img {
+  max-width: 180%;
+  position: relative;
+}
+
+.contact-form {
+  display: none;
+}
