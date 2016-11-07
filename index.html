@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="container">
   <div class="top-row">
     </div class="col-md-10 pull-right">
@@ -23,7 +24,7 @@ layout: default
           <div class="panel panel-default blog-links">
             <div class="panel-body">
               <h3><u>Latest Post:</u></h3>
-                <a class="blogPostLink" href="/index/blog"><u>Sinatra App and Deploying to Heroku</u></a>
+                <a class="blogPostLink" href="standard/2016/11/01/The_State_of_Things.html"><u>The State of Things - Wk 8</u></a>
             </div>
 
           </div>
@@ -79,7 +80,7 @@ layout: default
           <div class="panel panel-default pastBlogLinks">
             <div class="panel-body blog-panel-body">
               <ul class="post-list blog-list">
-                {% for post in site.posts %}
+                {% for post in site.posts limit:4 %}
                   <li>
                     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
                     <h4>
