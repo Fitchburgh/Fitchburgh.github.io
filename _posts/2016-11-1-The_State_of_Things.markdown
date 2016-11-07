@@ -24,7 +24,7 @@ Here it is, Sunday night at 11:17, and I finally…FINALLY see the scope of a we
 
 I was typing and doing a manual test of a feature I just ’finished' (yeah, I should probably be using selenium…), and the browser did something strange. I refreshed the page, and it worked properly.  “Oh…that’s a bug” I thought to myself and kept working.  Then I stopped. Opened up a word doc and started writing this post.  
 
-This is what they meant.  This is the scope.  This is an application in ‘full’ scale.  I mean, I have users. I have data storage.  I need multiple pages.  I haven’t even STARTED on the game part yet. For one pre-jr.-dev, this is a shit ton of work.  I really feel like I’m starting to grasp some major programming _______ at this point and it makes me happy.  
+This is what they meant.  This is the scope.  This is an application in ‘full’ scale.  I mean, I have users. I have data storage.  I need multiple pages.  I haven’t even STARTED on the game part yet. For one pre-jr.-dev, this is a shit ton of work.  I really feel like I’m starting to grasp some major backend fundamentals at this point and it makes me happy.  
 
 I’ve been excited about this project since I started it.  I don’t want to sleep but I know tomorrow brings even more challenges.  The good thing about programming, is that you can come back to it.  And hopefully I’ll have more opportunities to see this grow into something I will be proud of.  
 
