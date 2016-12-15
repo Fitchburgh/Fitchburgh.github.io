@@ -23,15 +23,15 @@ layout: default
           <br />
           <div class="panel panel-default blog-links slideFeat">
             <div>
-              <h3>Final Project:</h3>
-              <a href="http://www.yazuadps.com"><h4>Yazua DPS</h4></a>
+              <h3><u> Final Project:</u></h3>
+              <a href="http://www.yazuadps.com"><h4>  Yazua DPS</h4></a>
             </div>
             <div class="panel-body">
-              <h3><u>Latest Posts:</u></h3>
+              <h3><u>Latest Post:</u></h3>
               <div class="panel panel-default slideFeat pastBlogLinks">
                 <div class="panel-body blog-panel-body">
                   <ul class="post-list blog-list">
-                    {% for post in site.posts limit:5 %}
+                    {% for post in site.posts limit:1 %}
                       <li>
                         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
                         <h4>
